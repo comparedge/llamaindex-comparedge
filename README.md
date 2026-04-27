@@ -1,6 +1,6 @@
 # llamaindex-comparedge
 
-Feeds SaaS pricing data into LlamaIndex from the ComparEdge API. 331 products, 28 categories. No auth, no setup.
+Feeds SaaS pricing data into LlamaIndex from the ComparEdge API. SaaS pricing data — plans, features, ratings. No auth, no setup.
 
 ## Install
 
@@ -13,7 +13,7 @@ pip install llama-index-core requests
 ```python
 from comparedge_reader import ComparEdgeReader
 
-# All 331 products
+# All products
 reader = ComparEdgeReader()
 docs = reader.load_data()
 
@@ -37,7 +37,7 @@ Each `Document` maps to one SaaS product:
 
 ## Categories
 
-28 categories available. Pass any slug to `category=`:
+Categories available. Pass any slug to `category=`:
 
 `accounting` · `ai-agents` · `ai-assistants` · `ai-coding` · `ai-image`
 `ai-productivity` · `ai-video` · `ai-voice` · `ai-writing` · `cloud-hosting`
